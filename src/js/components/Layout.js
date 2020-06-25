@@ -3,7 +3,7 @@ import Header from "./Header";  //ヘッダーをインポート
 import Footer from "./Footer";  //フッターをインポート
 
 export default class Layout extends React.Component {
-  constructor() {
+  constructor() {    //stateの定義
     super();
     this.state = {title: "Welcome"}
    }
@@ -19,6 +19,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
+        <button onClick={()=>{console.log('test')}} />
         <Footer />
       </div>    //変数も定義できる。例) const text = "テキストです";  <div>{text}</div> 
     );
