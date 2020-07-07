@@ -19,7 +19,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
-        <button onClick={()=>{console.log('test')}} />
+        <button onClick={()=>{console.log('test')}} >送信</button>
         <Footer />
       </div>    //変数も定義できる。例) const text = "テキストです";  <div>{text}</div> 
     );
